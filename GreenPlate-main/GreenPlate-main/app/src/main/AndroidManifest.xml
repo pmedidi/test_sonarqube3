@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GreenPlate"
+        tools:targetApi="31">
+
+        <!-- SplashScreenActivity -->
+        <activity
+            android:name=".views.SplashScreenActivity"
+            android:theme="@style/Theme.App.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- AccountCreateActivity -->
+        <activity
+            android:name=".views.AccountCreateActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GreenPlate">
+        </activity>
+
+        <!-- NavBarActivity -->
+        <activity
+            android:name=".views.NavBarActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GreenPlate">
+        </activity>
+
+        <!-- LoginActivity -->
+        <activity
+            android:name=".views.LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GreenPlate">
+        </activity>
+
+        <!-- Personal Information -->
+        <activity
+            android:name=".views.PersonalActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GreenPlate">
+        </activity>
+          <!-- Personal Information Update-->
+        <activity
+            android:name=".views.PersonalUpdateActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GreenPlate">
+        </activity>
+
+        <!-- Daily Calories Chart-->
+        <activity
+            android:name=".views.CaloriesLeftActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GreenPlate">
+        </activity>
+
+        <!-- MealBreakdownChartActivity -->
+        <activity
+            android:name=".views.MealBreakdownChartActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GreenPlate">
+        </activity>
+
+        <!-- Enter New Recipe -->
+        <activity
+            android:name=".views.EnterNewRecipeActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GreenPlate">
+        </activity>
+
+
+    </application>
+
+</manifest>

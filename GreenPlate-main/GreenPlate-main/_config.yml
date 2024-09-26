@@ -1,0 +1,8 @@
+title: GreenPlate
+description: >- # this means to ignore newlines until "baseurl:"
+  CS2340 Project Group 5
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
